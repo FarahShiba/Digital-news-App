@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const MONGO_URL =
-  process.env.MONGO_URL ||
+  process.env.NEXT_PUBLIC_MONGO_URL ||
   "mongodb+srv://tambunanfarahshiba:fgMEvxKXZyzELAVX@courses.dbex1kq.mongodb.net/digital-news";
 
 if (!MONGO_URL) {
