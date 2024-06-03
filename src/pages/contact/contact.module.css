@@ -1,0 +1,35 @@
+.contact .infoItem {
+  text-align: center;
+}
+
+.contact .infoItem i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.contact .infoItem address,
+.contact .info-item p {
+  margin-bottom: 0;
+}
+
+.contact .infoItem h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.contact .infoItem a:hover {
+  color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+  .contact .infoItemBorders {
+    border-left: 1px solid rgba(var(--color-secondary-rgb), 0.2);
+    border-right: 1px solid rgba(var(--color-secondary-rgb), 0.2);
+  }
+}

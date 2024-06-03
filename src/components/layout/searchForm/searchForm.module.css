@@ -1,0 +1,56 @@
+.searchFormWrap {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  transition: 0.3s all ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.searchFormWrap .searchForms {
+  position: relative;
+}
+
+.searchFormWrap .searchForms .formControl {
+  width: 300px;
+  border: none;
+  box-shadow: 0 15px 20px -10px rgba(var(--color-black-rgb), 0.1);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.searchFormWrap .searchForms .formControl:active,
+.searchFormWrap .searchForms .formControl:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.searchFormWrap .searchForms .icon {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  opacity: 0.5;
+  left: 10px;
+}
+
+.searchFormWrap .searchForms .btn {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: 30px;
+}
+
+.searchFormWrap .searchForms .btn:active,
+.search-form-wrap .searchForms .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.searchFormWrap.active {
+  visibility: visible;
+  opacity: 1;
+}

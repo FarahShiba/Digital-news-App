@@ -1,0 +1,77 @@
+.postEntry1 {
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: none;
+}
+
+.postEntry1 img {
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.postEntry1 h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.postEntry1 h2 a {
+  color: var(--color-black);
+}
+
+.postEntry1.lg h2 {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.postMeta {
+  font-size: 11px;
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--font-secondary);
+  color: rgba(var(--color-black-rgb), 0.4);
+  margin-bottom: 10px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.authorAvatar {
+  margin-right: 10px;
+}
+
+.authorImage {
+  width: 35px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.authorName {
+  font-family: var(--font-secondary);
+}
+
+.authorName p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.desc {
+  text-align: justify;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(var(--color-black-rgb), 0.4);
+  padding-top: 15px;
+}

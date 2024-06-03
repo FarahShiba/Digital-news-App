@@ -1,0 +1,89 @@
+.postContent {
+  padding-left: 5%;
+  padding-right: 15%;
+}
+
+.postContent .firstCharacter {
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.postContent figure {
+  position: relative;
+  left: 52%;
+  min-width: 990px;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1255px) {
+  .postContent figure {
+    min-width: auto;
+    left: auto !important;
+    transform: none;
+  }
+}
+
+.postContent figure figcaption {
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  padding: 10px 0 0 0;
+}
+
+.postMeta {
+  font-size: 12px;
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  color: rgba(var(--color-black-rgb), 0.4);
+  margin-bottom: 15px;
+}
+
+.asideBlock {
+  margin-bottom: 30px;
+}
+
+.asideBlock .customTabNav .navItem {
+  display: inline-block;
+}
+
+.asideBlock .customTabNav .navItem button {
+  color: var(--color-black);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 20px;
+}
+
+.asideBlock .customTabNav .navItem button.active {
+  background-color: var(--color-black) !important;
+  background-color: transparent !important;
+  color: var(--color-black);
+  border-bottom: 2px solid var(--color-black);
+}
+.tabContent {
+  position: relative;
+}
+
+.tabPane {
+  position: absolute;
+}
+
+.createPostContent {
+  padding: 40px 0;
+}
+
+.formControl {
+  width: 196%;
+  box-shadow: 4 15px 20px -10px rgba(var(--color-black-rgb), 0.1);
+  padding-left: 50%;
+}

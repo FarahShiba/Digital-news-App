@@ -1,0 +1,41 @@
+.postEntry2 {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.postEntry2 .postMeta {
+  font-size: 11px;
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--font-secondary);
+  color: rgba(var(--color-black-rgb), 0.4);
+  margin-bottom: 10px;
+}
+
+.desc {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.postEntry2 .thumbnail {
+  flex: 0 0 65%;
+}
+
+@media (max-width: 960px) {
+  .postEntry2 .thumbnail {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.postEntry2.half .thumbnail {
+  flex: 0 0 50%;
+}
+
+@media (max-width: 768px) {
+  .postEntry2.half .thumbnail {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+}

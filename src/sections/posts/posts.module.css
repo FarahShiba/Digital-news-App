@@ -1,0 +1,75 @@
+.posts {
+  margin-top: 20px;
+}
+
+.borderStart {
+  border-left: 1px solid #ddd;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.containerCustom {
+  max-width: 900px;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  flex: 1;
+}
+
+/* trending */
+
+.containTrending {
+  margin-top: 0;
+}
+
+.trending {
+  border: 1px solid rgba(var(--color-black-rgb), 0.1);
+  padding: 20px;
+}
+
+.trending > h3 {
+  color: var(--color-black);
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1);
+}
+
+.trending .trendingPost {
+  padding: 0;
+  margin: 0;
+}
+
+.trending .trendingPost li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: block;
+}
+
+.trending .trendingPost li a {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.trending .trendingPost li a .number {
+  position: absolute;
+  z-index: -1;
+  font-size: 5rem;
+  left: -10px;
+  top: -20px;
+  font-weight: 700;
+  color: rgba(var(--color-black-rgb), 0.05);
+}
+
+.trending .trendingPost li a h3 {
+  font-size: 18px;
+  color: rgba(var(--color-black-rgb), 0.9);
+  margin-bottom: 5px;
+}
+
+.trending .trendingPost li a .author {
+  color: rgba(var(--color-black-rgb), 0.7);
+  font-weight: 500;
+}
