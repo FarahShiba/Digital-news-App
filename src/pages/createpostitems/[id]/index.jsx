@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/router";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import styles from "../../postitems/pages.module.css";
@@ -18,19 +18,26 @@ const EditPostItem = () => {
 
   const [text, setText] = useState(initialState);
 
-  const getSinglePostData = () => {
-    console.log(router.query);
+  // const getSinglePostData = () => {
+  //   console.log(router.query);
+  //   fetch(`/api/postitems/${id}`)
+  //     .then((res) => res.json())
+  //     .then((data) => setText(data.data))
+  //     .catch((e) => console.log(e.message));
+  // };
+
+  const getSinglePostData = useCallback(() => {
     fetch(`/api/postitems/${id}`)
       .then((res) => res.json())
       .then((data) => setText(data.data))
       .catch((e) => console.log(e.message));
-  };
+  }, [id]);
 
   useEffect(() => {
     if (id) {
-      getSinglePostData(id);
+      getSinglePostData();
     }
-  }, [id]);
+  }, [id, getSinglePostData]);
 
   const handleTextChange = (e) => {
     setText({
