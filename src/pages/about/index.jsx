@@ -98,7 +98,7 @@ const Page = () => {
                   for breaking down stigmas associated with mental health,
                   urging society to embrace openness and support for those
                   facing emotional challenges. It is a reminder that true
-                  strength lies in the courage to confront and share one's
+                  strength lies in the courage to confront and share one&apos;s
                   innermost struggles, fostering a culture of empathy and
                   understanding.
                 </p>
