@@ -181,7 +181,7 @@ const PostItem = () => {
               <div className={styles.asideBlock}>
                 <ul className="nav nav-pills customTabNav mb-4">
                   {tabs.map((tab) => (
-                    <li className={styles.navItem}>
+                    <li className={styles.navItem} key={tab.id}>
                       <Button
                         className={`nav-link ${
                           tab.active ? "active" : undefined
