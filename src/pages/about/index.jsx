@@ -7,7 +7,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -243,4 +243,4 @@ const page = () => {
     </main>
   );
 };
-export default page;
+export default Page;
