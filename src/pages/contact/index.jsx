@@ -7,7 +7,7 @@ import Link from "next/link";
 import AOS from "aos";
 import ContactForm from "@/components/layout/contactForm/ContactForm";
 
-export default function Index() {
+export default function Contact() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
