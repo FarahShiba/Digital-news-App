@@ -11,7 +11,7 @@ const Posts = () => {
   const router = useRouter();
 
   const getItemsData = () => {
-    fetch(`/api/postitems`)
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/postitems`)
       .then((res) => res.json())
       .then((data) => {
         setItems(data.data);

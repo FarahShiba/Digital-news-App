@@ -15,7 +15,9 @@ export default function Posts() {
   //Fetch all items
   const fetchItems = async () => {
     try {
-      const response = await fetch("/api/postitems");
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/postitems`
+      );
       const data = await response.json();
       const filteredData = data.data.filter(
         (item) => item.img !== "path/to/girls-picture.jpg"
@@ -30,7 +32,9 @@ export default function Posts() {
 
   const getSinglePostData = async (id) => {
     try {
-      const response = await fetch(`/api/postitems/${id}`);
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/postitems/${id}`
+      );
       const data = await response.json();
       setSelectedItem(data.data);
     } catch (error) {

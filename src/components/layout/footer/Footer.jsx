@@ -9,7 +9,7 @@ export default function Footer() {
   const [items, setItems] = useState([]);
 
   const getPostsData = () => {
-    fetch(`/api/postitems`)
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/postitems`)
       .then((res) => res.json())
       .then((data) => {
         setItems(data.data);

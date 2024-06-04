@@ -27,7 +27,7 @@ const EditPostItem = () => {
   // };
 
   const getSinglePostData = useCallback(() => {
-    fetch(`/api/postitems/${id}`)
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/postitems/${id}`)
       .then((res) => res.json())
       .then((data) => setText(data.data))
       .catch((e) => console.log(e.message));
@@ -57,13 +57,16 @@ const EditPostItem = () => {
       });
     } else {
       try {
-        const response = await fetch(`/api/postitems/${id}`, {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(text),
-        });
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/postitems/${id}`,
+          {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(text),
+          }
+        );
         if (response.ok) {
           setText({ ...text, validate: "Post updated successfully" });
         } else {

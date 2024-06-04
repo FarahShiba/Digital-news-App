@@ -31,13 +31,16 @@ export default function ContactForm() {
       });
     } else {
       try {
-        const response = await fetch("/api/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(text),
-        });
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(text),
+          }
+        );
         if (response.ok) {
           setText({ ...initialState, validate: "Message sent successfully" });
         } else {

@@ -32,13 +32,16 @@ const CreatePostItems = () => {
       });
     } else {
       try {
-        const response = await fetch("/api/postitems", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(text),
-        });
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/postitems`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(text),
+          }
+        );
         if (response.ok) {
           setText({ ...initialState, validate: "Post created successfully" });
         } else {

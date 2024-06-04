@@ -43,7 +43,9 @@ const PostItem = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch(`/api/postitems/${id}`);
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/postitems/${id}`
+      );
       if (!response.ok) {
         throw new Error(
           `HTTP error: ${response.status} - ${response.statusText}`
@@ -65,7 +67,9 @@ const PostItem = () => {
 
   const fetchItems = async () => {
     try {
-      const response = await fetch("/api/postitems");
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/postitems`
+      );
       const data = await response.json();
       const filteredData = data.data.filter(
         (item) => item.img !== "path/to/girls-picture.jpg"
@@ -88,9 +92,12 @@ const PostItem = () => {
   // handle Delete post By id
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`/api/postitems/${id}`, {
-        method: "DELETE",
-      });
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/postitems/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
       if (!response.ok) {
         throw new Error(
           `HTTP error: ${response.status} - ${response.statusText}`
