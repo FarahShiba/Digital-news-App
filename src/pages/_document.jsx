@@ -4,6 +4,7 @@ import Script from "next/script";
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export default function Document() {
+  console.log("Google Analytics ID:", GA_ID);
   return (
     <Html lang="en">
       <Head>
@@ -16,9 +17,11 @@ export default function Document() {
             <Script id="google-analytics-script" strategy="afterInteractive">
               {`
                 window.dataLayer = window.dataLayer || [];
+                console.log('dataLayer initialized:', window.dataLayer);
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', '${GA_ID}');
+                console.log('gtag config called with ID:', '${GA_ID}');
               `}
             </Script>
           </>
