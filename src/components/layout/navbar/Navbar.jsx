@@ -17,24 +17,6 @@ export const navbars = [
   { id: 5, name: "Contact", link: "/contact", active: false },
 ];
 
-export const scis = [
-  {
-    id: 1,
-    icon: <i className="bi-facebook"></i>,
-    link: "https://www.facebook.com/",
-  },
-  {
-    id: 2,
-    icon: <i className="bi-instagram"></i>,
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: 3,
-    icon: <i className="bi-twitter"></i>,
-    link: "https://www.twitter.com/",
-  },
-];
-
 export const Navbar = () => {
   const router = useRouter();
   return (

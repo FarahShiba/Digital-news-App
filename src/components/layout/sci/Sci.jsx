@@ -1,25 +1,47 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { scis } from "../navbar/Navbar";
 import styles from "./sci.module.css";
+import Link from "next/link";
 
-export default function Sci() {
+const Sci = () => {
   return (
     <Container className="d-flex justify-content-center align-items-center">
       <Row className="g-2">
-        {scis.map((sci) => (
-          <Col key={sci.id} className="text-center">
+        <Col className="text-center">
+          <Link href="https://www.facebook.com/" passHref legacyBehavior>
             <a
-              href={sci.link}
               target="_blank"
               rel="noopener noreferrer"
               className={`mx-2 ${styles.iconLink}`}
             >
-              {sci.icon}
+              <i className="bi-facebook"></i>
             </a>
-          </Col>
-        ))}
+          </Link>
+        </Col>
+        <Col className="text-center">
+          <Link href="https://www.instagram.com/" passHref legacyBehavior>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`mx-2 ${styles.iconLink}`}
+            >
+              <i className="bi-instagram"></i>
+            </a>
+          </Link>
+        </Col>
+        <Col className="text-center">
+          <Link href="https://www.twitter.com/" passHref legacyBehavior>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`mx-2 ${styles.iconLink}`}
+            >
+              <i className="bi-twitter"></i>
+            </a>
+          </Link>
+        </Col>
       </Row>
     </Container>
   );
-}
+};
+export default Sci;
