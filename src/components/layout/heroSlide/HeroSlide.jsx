@@ -17,7 +17,7 @@ export default function HeroSlide({ slide }) {
             quality={50}
             placeholder="blur"
             blurDataURL={`/${slide.bgImg}`}
-            loading="lazy"
+            loading="eager"
             sizes="(max-width: 600px) 100vw, 600px"
             fetchpriority="high"
           />
