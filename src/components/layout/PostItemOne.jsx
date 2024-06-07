@@ -20,6 +20,7 @@ const PostItemOne = ({ item, onClick, showDetail }) => {
             blurDataURL={`/${item.img}`}
             sizes="(max-width: 600px) 100vw, 600px"
             fetchpriority="high"
+            loading="eager"
           />
         </a>
       </Link>
