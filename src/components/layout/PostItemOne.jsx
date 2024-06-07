@@ -15,6 +15,10 @@ const PostItemOne = ({ item, onClick, showDetail }) => {
             width={700}
             height={475}
             className={`${styles.image} img-fluid`}
+            quality={50}
+            placeholder="blur"
+            blurDataURL={`/${item.img}`}
+            sizes="(max-width: 600px) 100vw, 600px"
           />
         </a>
       </Link>
@@ -40,6 +44,10 @@ const PostItemOne = ({ item, onClick, showDetail }) => {
                   width={40}
                   height={40}
                   className={styles.authorImage}
+                  quality={50}
+                  placeholder="blur"
+                  blurDataURL={`/${item.avatar}`}
+                  sizes="(max-width: 600px) 100vw, 600px"
                 />
               </div>
               <div className={styles.authorName}>
