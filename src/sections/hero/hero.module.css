@@ -41,7 +41,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  background-position: center;
+  /* background-position: center; */
+  overflow: hidden;
 }
 
 .imgBg:before {
