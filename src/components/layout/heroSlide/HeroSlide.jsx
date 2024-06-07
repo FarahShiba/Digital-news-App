@@ -6,11 +6,11 @@ import styles from "../../../sections/hero/hero.module.css";
 export default function HeroSlide({ slide }) {
   return (
     <Link href="#">
-      <Card className={`d-flex align-items-end mb-2 ${styles.imgBg}`}>
-        <div
-          className={styles.imageContainer}
-          style={{ backgroundImage: `url(/${slide.bgImg})` }}
-        >
+      <Card
+        className={`d-flex align-items-end mb-2 ${styles.imgBg}`}
+        style={{ backgroundImage: `url(/${slide.bgImg})` }}
+      >
+        <div>
           <Card.Body
             className={`img-bg-inner px-3 px-md-5 mb-3 ${styles.imgBgInner}`}
           >
