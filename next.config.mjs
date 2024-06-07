@@ -1,15 +1,23 @@
-import withImages from "next-images";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
 
 const nextConfig = {
   reactStrictMode: true,
-  webpack: (config, { dev, isServer }) => {
-    if (!dev && !isServer) {
-      config.node = {
-        fs: "empty",
-      };
-    }
+  webpack(config, options) {
+    config.module.rules.push({
+      test: /\.(jpe?g|png)$/i,
+      use: [
+        {
+          loader: require.resolve("webp-loader"),
+          options: {
+            quality: 75,
+          },
+        },
+      ],
+    });
+
     return config;
   },
 };
 
-export default withImages(nextConfig);
+export default nextConfig;
