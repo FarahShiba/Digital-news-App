@@ -19,6 +19,7 @@ export default function HeroSlide({ slide }) {
             blurDataURL={`/${slide.bgImg}`}
             loading="lazy"
             sizes="(max-width: 600px) 100vw, 600px"
+            fetchpriority="high"
           />
         </div>
         <Card.Body

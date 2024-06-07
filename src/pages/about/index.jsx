@@ -36,6 +36,7 @@ const Page = () => {
                   className="img-fluid"
                   width={4000}
                   height={800}
+                  loading="lazy"
                 />
               </a>
               <div className="ps-md-5 mt-md-0">
@@ -73,6 +74,7 @@ const Page = () => {
                   className="img-fluid"
                   width={4000}
                   height={800}
+                  loading="lazy"
                 />
               </a>
               <div className="pe-md-5 mt-4 mt-md-0">
@@ -148,6 +150,7 @@ const Page = () => {
                     className="img-fluid mb-4"
                     width={400}
                     height={400}
+                    loading="lazy"
                   />
                 </div>
                 <div className="col-6 mt-4">
@@ -157,6 +160,7 @@ const Page = () => {
                     className="img-fluid mb-4"
                     width={400}
                     height={400}
+                    loading="lazy"
                   />
                 </div>
               </Row>
@@ -190,6 +194,7 @@ const Page = () => {
                 className="img-fluid rounded-circle w-50 mb-4"
                 width={400}
                 height={400}
+                loading="lazy"
               />
               <h4>Sel Gom</h4>
               <span className="d-block mb-3 text-uppercase">
@@ -208,6 +213,7 @@ const Page = () => {
                 className="img-fluid rounded-circle w-50 mb-4"
                 width={100}
                 height={100}
+                loading="lazy"
               />
               <h4>Hand In Hand</h4>
               <span className="d-block mb-3 text-uppercase">
@@ -226,6 +232,7 @@ const Page = () => {
                 className="img-fluid rounded-circle w-50 mb-4"
                 width={100}
                 height={100}
+                loading="lazy"
               />
               <h4>So Scary</h4>
               <span className="d-block mb-3 text-uppercase">

@@ -19,6 +19,7 @@ const PostItemOne = ({ item, onClick, showDetail }) => {
             placeholder="blur"
             blurDataURL={`/${item.img}`}
             sizes="(max-width: 600px) 100vw, 600px"
+            fetchpriority="high"
           />
         </a>
       </Link>
@@ -48,6 +49,7 @@ const PostItemOne = ({ item, onClick, showDetail }) => {
                   placeholder="blur"
                   blurDataURL={`/${item.avatar}`}
                   sizes="(max-width: 600px) 100vw, 600px"
+                  fetchpriority="high"
                 />
               </div>
               <div className={styles.authorName}>
