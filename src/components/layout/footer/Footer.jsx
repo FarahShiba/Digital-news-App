@@ -41,6 +41,7 @@ export default function Footer() {
     { name: "Create Post", path: "/createpostitems" },
     { name: "Contact", path: "/contact" },
     { name: "Privacy Policy", path: "/privacyPolicy" },
+    { name: "FAQ", path: "/faq" },
   ];
 
   const scis = ["twitter-x", "facebook", "instagram", "linkedin"];
